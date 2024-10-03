@@ -1,6 +1,8 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const app = express();
+// Middleware to parse JSON bodies
+app.use(express.json());
 
 const secretKey = 'EvkZteEII1cfvDExdY3mBq4O7jQgHh88';
 
